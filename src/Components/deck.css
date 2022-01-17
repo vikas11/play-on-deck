@@ -1,0 +1,68 @@
+.main-container{
+	width: 55vw;
+	 height: 100vh;
+	  text-align: center; 
+	  margin: 0px auto;
+	border-radius: 50%;
+	color:white;
+}
+.table-container{
+	width: 100%;
+	 height: 100%;
+	   text-align: center;
+	   border-radius:10px;
+}
+.blocks{
+	width: 100%;
+	 height: 30%;
+	  background-color: transparent;
+	   text-align: center;
+	   vertical-align: middle;
+}
+.left-right-blocks{
+	width: 30%;
+	height: 20%;
+	background-color: transparent;
+	text-align: center;
+}
+.center-panel{
+	width: 40%;
+	 background-color: #eaeaea;
+	 color:#333;
+}
+.user-image{
+	width:80px;
+}
+img.card {
+	width: 30px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: initial;
+	box-sizing: initial;
+}
+
+.active-hand{
+	text-align: center;
+}
+.fan {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	padding-bottom: 1em;
+}
+.fan img.card { 
+	position: absolute;
+	width: 60px;
+}
+.blink-winner {
+         animation: blinker 0.50s linear infinite;
+		 color: lime;
+		 font-weight: 600;
+		 font-size: 26px;
+}
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }

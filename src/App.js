@@ -1,25 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import Deck from "./Components/deck";
 
-function App() {
+import { connect } from "react-redux"
+
+
+import {
+  addPlayers,
+} from "./redux/Players/players.actions"
+
+function App(props) {
+  const isLoggedIn = props.players.length;
+  const myStyle={
+            backgroundImage:`url(${window.location.origin+ "/assets/images/bg.png"})`,
+            height:'100vh',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'repeat',
+            };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={myStyle}>      
+        <Deck ></Deck> 
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    players: state.players.players
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    //addPlayers: (payload) => dispatch(addPlayers({id:0,name:'vikas'})),
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)
