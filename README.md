@@ -19,7 +19,6 @@ You may also see any lint errors in the console.
 ![1-loading-players](https://user-images.githubusercontent.com/3095999/149715603-6803c48a-58c4-463e-a1dc-efe41b85a1c2.png)
 ![2-ready-to-serve-cards](https://user-images.githubusercontent.com/3095999/149715630-1121476b-9b22-435e-a681-6d607c2f53d3.png)
 ![3-card-served](https://user-images.githubusercontent.com/3095999/149715650-45f4b68d-6fbd-4d27-837d-5898f073e12c.png)
-![4-result-declared](https://user-images.githubusercontent.com/3095999/149715661-0e0a8126-a2bd-43c7-b9c5-8becc369ec2c.png)
 ![7-winner-with-total-points](https://user-images.githubusercontent.com/3095999/149715701-3e868f8c-94f8-4b1a-9651-62477a083e4e.png)
 
 
